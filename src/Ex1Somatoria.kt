@@ -3,7 +3,7 @@
 //número digitado pelo usuário. Exiba o resultado da somatória.
 
 fun main() {
-
+    somatoriaDeNumeros()
 }
 
 fun receberNumero(): Int{
@@ -11,4 +11,15 @@ fun receberNumero(): Int{
     val numeroDigitado = readln().toInt()
 
     return numeroDigitado
+}
+
+fun somatoriaDeNumeros(){
+    val numeroDigitado = receberNumero()
+
+    var soma=0
+    for(i in 0..numeroDigitado){
+        soma = soma+i
+    }
+
+    println("A soma de 1 até $numeroDigitado é: $soma")
 }
